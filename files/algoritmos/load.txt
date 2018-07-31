@@ -1,0 +1,13 @@
+memoria_instrucoes[0] <= 32'b00000000000000000000000000000000; // NOTHING
+memoria_instrucoes[1] <= 32'b00111000000000000000000000000000;  // .0 <- input
+memoria_instrucoes[2] <= 32'b01000000000000000000000000000000;  // output .0 em d1
+	
+memoria_instrucoes[3] <= 32'b00111000010000000000000000000000;  // .1 <- input
+memoria_instrucoes[4] <= 32'b01000000010100000000000000000000;  // output .1 em d2
+	
+memoria_instrucoes[5] <= 32'b00110000000000100000000000000000;  // store .0 em mem[.1]
+memoria_instrucoes[6] <= 32'b00101000100000100000000000000000;  // load .2 from mem[.1]
+	
+memoria_instrucoes[7] <= 32'b01000000101000000000000000000000;  // output .2 em d3
+	
+memoria_instrucoes[8] <= 32'b11111000000000000000000000000000;  // stop
